@@ -1,0 +1,58 @@
+# Compiled object files
+*.o
+*.obj
+
+# Static and shared libraries
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+
+# Windows executables
+*.exe
+
+# Debug/profiling artifacts
+*.dSYM/
+*.su
+gmon.out
+core
+*.core
+
+# Build directories
+build/
+out/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+
+# Dependency/package managers
+vcpkg_installed/
+conan/
+
+# Compiler-generated dependency files
+*.d
+
+# Preprocessed source files
+*.i
+*.ii
+
+# Assembly listings
+*.s
+*.asm
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Extensionless compiled executables (Linux)
+02.Preparation/hello
