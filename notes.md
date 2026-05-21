@@ -16,3 +16,19 @@
 * However, you can write C++ code that looks a lot like C and then add the C++-specific stuff when needed. KISS method, you don't need the advanced stuff unless you do.
 
 * You can write C++ code as procedural or object-oriented style, much like Python. It does not enforce OOP like Python, but technically everything in Python is an object so it's even less OOP than Python.
+
+# Unit 02
+
+* Added to ~/.bashrc an alias for the following compiliation command:
+    ```bash
+    clang++ -std=c++17 -Wall -Wextra -fsanitize=address,undefined -Wpedantic hello.cpp -o hello
+    ```
+
+    The bash code is as follows:
+    ```bash
+    cppbuild() {
+    clang++ -std=c++17 -Wall -Wextra -fsanitize=address,undefined -Wpedantic "$1" -o "${2:-${1%.cpp}}"
+    }
+    ```
+
+    The ```${2:-${1%.cpp}}``` part means: use the second argument if provided, otherwise strip .cpp from the filename and use that as the output name. After adding it, reload your shell with source ~/.bashrc.
